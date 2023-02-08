@@ -1,38 +1,94 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .App {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  border: 1 px solid #4a4235;
+  box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  border-radius: 3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn{
+  border: 1 px solid #4a4235;
+  box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  background-color: transparent;
+  margin-top: 0px;
+  margin-left: 55px;
+  border-radius: 3px;
+}
+.list{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.tasty{
+  background: #ffff;
+  border: 1px solid #4a4235;
+  box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  padding: 10px 10px;
+  outline: transparent;
+  transition: box-shadow .2s ease-in-out;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+.par{
+  display: block;
+  font-size: 18px;
+  margin: 0;
+  padding: .4em .4em .4em .8em;
+  color: #020202;
+  font-family: 'Roboto', sans-serif;
+}
+li{
+  display: block;
+  padding: .4em .4em .4em .8em;
+  font-size: 20px;
+  color: #020202;
+  font-family: 'Roboto', sans-serif;
+}
+li:hover{
+  background: #f1ebe7;
+}
+ul {
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.icon{
+  width: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3, ul, p{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 500px){
+  h1{
+    font-size: 20px;
+    margin-top: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  h2, h3{
+    font-size: 15px;
+  }
+  li, .par{
+    font-size: 15px;
   }
 }
