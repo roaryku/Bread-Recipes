@@ -11,6 +11,7 @@ video {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .container {
+  display: block;
   display: flex;
   justify-content: center;
 }
@@ -21,7 +22,7 @@ video {
   font-size: 14px;
   line-height: 18px;
   color: #575756;
-  border: 1px solid #4a4235;
+  border: 2px solid #4a4235;
   -webkit-box-shadow: inset 0px 0px 0px 4px #ecc69a;
   border-radius: 3px;
 }

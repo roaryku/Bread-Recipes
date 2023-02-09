@@ -45,7 +45,7 @@ const finalSearch = (e) => {
       
       <div className='container heading'>
         <form onSubmit = {finalSearch}>
-          <input className='search' placeholder='search...' onChange={myRecipeSearch} value={mySearch}/>
+          <input className='search' placeholder='search...' onChange={myRecipeSearch} value={mySearch}></input>
 
         <div className='container'>
           <button className='btn'>
