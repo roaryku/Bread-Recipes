@@ -18,7 +18,6 @@ function App(){
     const getNewRecipe = useCallback(async () => {
       const responce = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
       const data = await responce.json();
-      console.log(data.hits);
       setMyRecipes(data.hits);
     },[wordSubmitted])
     useEffect(() =>{
@@ -26,7 +25,6 @@ function App(){
   }, [getNewRecipe])
 
 const myRecipeSearch = (e) => {
-  console.log(e.target.value);
   setMySearch(e.target.value);
 }
 
@@ -44,18 +42,23 @@ const finalSearch = (e) => {
         <h1>Find your bread recipe</h1>
     </div>
       
-      <div className='container'>
+      
+      <div className='container heading'>
         <form onSubmit = {finalSearch}>
           <input className='search' placeholder='search...' onChange={myRecipeSearch} value={mySearch}/>
-        </form>
+
+        <div className='container'>
           <button className='btn'>
             <img src={icon} width="35px" className='icons' alt='baking'/>
           </button>
+          </div>
+        </form>
       </div>
-
+      
       <div>
-        {myRecipes.map(element => (
+        {myRecipes.map((element, index) => (
           <MyRecipesComponent 
+          key={index}
           label = {element.recipe.label}
           cuisine = {element.recipe.cuisineType}
           image = {element.recipe.image}

@@ -25,12 +25,15 @@ video {
   box-shadow: inset 0px 0px 0px 4px #ecc69a;
   border-radius: 3px;
 }
+.heading{
+  margin-right: 95px;
+}
 .btn{
   border: 1 px solid #4a4235;
   box-shadow: inset 0px 0px 0px 4px #ecc69a;
   background-color: transparent;
-  margin-top: 0px;
-  margin-left: 55px;
+  margin-top: -46px;
+  margin-right: -355px;
   border-radius: 3px;
 }
 .list{
@@ -79,6 +82,7 @@ h1, h2, h3, ul, p{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
+
 
 @media all and (max-width: 500px){
   h1{
