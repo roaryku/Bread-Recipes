@@ -21,15 +21,15 @@ video {
   font-size: 14px;
   line-height: 18px;
   color: #575756;
-  border: 1 px solid #4a4235;
-  box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  border: 1px solid #4a4235;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #ecc69a;
   border-radius: 3px;
 }
 .heading{
   margin-right: 95px;
 }
 .btn{
-  border: 1 px solid #4a4235;
+  -webkit-border: 1px solid #4a4235;
   box-shadow: inset 0px 0px 0px 4px #ecc69a;
   background-color: transparent;
   margin-top: -46px;
