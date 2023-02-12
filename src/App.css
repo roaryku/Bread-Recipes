@@ -99,9 +99,9 @@ h1, h2, h3, ul, p{
     width: 90%;
   }
   .btn{
-    border: 1 px solid #4a4235;
+    border: 2px solid #4a4235;
   }
   .search{
-    -webkit-box-shadow: inset 0px 0px 0px 4px #ecc69a;
+    -webkit-box-shadow: inset 1px 1px 1px 4px #ecc69a;
   }
 }
