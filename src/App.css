@@ -22,14 +22,14 @@ video {
   line-height: 18px;
   color: #575756;
   border: 2px solid #4a4235;
-  -webkit-box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  box-shadow: inset 0px 0px 0px 4px #ecc69a;
   border-radius: 3px;
 }
 .heading{
   margin-right: 95px;
 }
 .btn{
-  -webkit-border: 1px solid #4a4235;
+  border: 1px solid #4a4235;
   box-shadow: inset 0px 0px 0px 4px #ecc69a;
   background-color: transparent;
   margin-right: -360px;
@@ -97,5 +97,11 @@ h1, h2, h3, ul, p{
   }
   .search{
     width: 90%;
+  }
+  .btn{
+    border: 1px solid #4a4235;
+  }
+  .search{
+    box-shadow: inset 0px 0px 0px 4px #ecc69a;
   }
 }
