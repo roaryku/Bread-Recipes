@@ -95,5 +95,7 @@ h1, h2, h3, ul, p{
   li, .par{
     font-size: 15px;
   }
-  
+  .search{
+    width: 95%;
+  }
 }
