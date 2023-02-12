@@ -22,7 +22,8 @@ video {
   line-height: 18px;
   color: #575756;
   border: 2px solid #4a4235;
-  box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #ecc69a;
+  -webkit-appearance: none;
   border-radius: 3px;
 }
 .heading{
@@ -101,7 +102,5 @@ h1, h2, h3, ul, p{
   .btn{
     border: 2px solid #4a4235;
   }
-  .search{
-    -webkit-box-shadow: inset 1px 1px 1px 4px #ecc69a;
-  }
+  
 }
